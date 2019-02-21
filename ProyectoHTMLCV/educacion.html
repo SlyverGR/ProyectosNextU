@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content=“Oscar Andres Garcia I”>
+<meta name="description" content=“Hoja de Vida, Educacion“>
+<title>Oscar Garcia - Hoja de Vida - Educacion</title>
+<style type="text/css">
+	html {
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+		background-image:url("images/background.jpg");
+		background-attachment: fixed;
+	}
+	header h1{
+		text-align: center;
+	}
+	.transparent {
+		background: rgba(242,236,236,0.70);
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+	.block{
+		display: inline-block;
+	}
+	nav {
+		text-align: center;
+		word-spacing: 10px;
+	}
+</style>
+</head>
+
+<body>
+	<header class="transparent">
+				<div class="block" style="width: 15%"><img src="images/logo.svg" alt="Logo OG" width="100px"></div><div class="block" style="width: 85%; vertical-align: top;"><h1>Hoja de Vida - Educacion</h1></div>
+
+				<h2>Datos Personales</h2>
+				<h3>Nombres: Oscar Andres</h3>
+				<h3>Apellidos: Garcia Idrovo</h3>
+				<h3>Fecha de Nacimiento: 1984-06-05</h3>
+				<h3>Lugar de Nacimiento: Guayaquil - Ecuador</h3>
+	</header>
+	<nav class="transparent">
+		<a href="index.html">Inicio</a>
+		<a href="educacion.html">Educacion</a>
+		<a href="experiencia.html">Experiencia</a>
+	</nav>
+	<section class="transparent">
+		<article>
+			<h2>Educacion</h2>
+			<table width="50%" border="1" cellpadding="0" cellspacing="0" bordercolor="#010101">
+			  <tbody>
+				<tr>
+				  <td>Año</td>
+				  <td>Institucion</td>
+				  <td>Lugar</td>
+				  <td>Culmino?</td>
+				</tr>
+				<tr>
+				  <td>2003</td>
+				  <td>U. Catolica</td>
+				  <td>Ecuador</td>
+				  <td>Si</td>
+				</tr>
+				  <tr>
+				  <td>2005</td>
+				  <td>Inst. Da Vinci</td>
+				  <td>Argentina</td>
+				  <td>Si</td>
+				</tr>
+				 <tr>
+				  <td>2007</td>
+				  <td>ESPOL</td>
+				  <td>Ecuador</td>
+				  <td>Si</td>
+				</tr>
+			  </tbody>
+			</table>
+			<br>
+			<form action="#" name="estudios">
+				<fieldset style="width: 50%">
+					<legend>Agregar Estudios</legend>
+					<label>Año</label>
+					<select name="years">
+						<option>2010</option>
+						<option>2011</option>
+						<option>2012</option>
+						<option>2013</option>
+						<option>2014</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+						<option selected>2018</option>
+					</select><br />
+					<label>Institucion</label>
+					<input type="text" name="institu" required><br />
+					<label>Lugar</label>
+					<textarea name="lugar"></textarea><br />
+					<label>Culmino?</label>
+					Si<input type="radio" name="culmina" value="si">
+					No<input type="radio" name="culmina" value="no"><br />
+					<input type="submit" name="Enviar">
+				</fieldset>
+			</form>
+
+		</article>
+	</section>
+	<footer class="transparent">
+		<center><h6>E-Mail: oscar.garcia.idrovo@gmail.com - Movil: +593985810300 - Sauces IV / Guayaquil / Ecuador</h6></center>
+	</footer>
+</body>
+</html>
