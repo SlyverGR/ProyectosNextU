@@ -1,0 +1,245 @@
+html{
+    font-family: Dancing Script;
+    background-color: black;
+    font-size: 18px;
+    animation-name: intro;
+    animation-duration: 1s;
+}
+
+
+.contenido {
+    margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.seccion{
+    width: 100%;
+}
+
+.contenido header, footer div, .seccion div , .galeria {
+	box-sizing: border-box;
+	padding: 2%;
+}
+
+img{
+
+    filter:drop-shadow(2px 2px #02010a);
+    
+}
+
+header a:link{
+    color: #ffffff;
+}
+
+.secundarias a:link{
+    color: #000000;
+}
+
+a:visited{
+    color: #ffffff;
+}
+
+.actual{
+    text-decoration-line: none;
+}
+
+header{
+    background-color: #5b7989;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.titulo{
+    color: white;
+    text-shadow: 2px 2px #02010a;
+    width: 70%
+}
+
+.menu_superior{
+    float: right;
+    width: 30%
+}
+
+.menu_superior div{
+    float: left;
+    width: 33%;
+    margin-top: 10%;
+}
+
+footer{
+    background-color: #C6d5c5;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.contacto, .terminos, .redes, .derechos{
+    width: 25%;
+}
+
+.superior{
+    background-color:  #82c3a6;
+    position: relative;
+}
+
+.superior img{
+    display: block;
+    margin: auto;
+}
+
+.secundarias{
+    background-color:  #d5c75f;
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.galeria{
+    width: 100%;
+    background-color:  #d5c75f;
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.galeria div{
+    width: 33%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.galeria div img{
+    display: block;
+    margin: auto;
+}
+
+.imagen1{
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.imagen2, .imagen4, .imagen6{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.imagen3{
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}
+
+.secundarias div{
+    width: 50%;
+    text-align: center;
+}
+
+.secundarias div img{
+    display: block;
+    margin: auto;
+}
+
+.secundaria1:hover img{ 
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.secundaria2:hover img{
+    -webkit-animation-name: translate;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: translate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(10deg);
+        filter:drop-shadow(2px 2px #82c3a6);
+    }
+}
+
+@-webkit-keyframes rotate{
+    to{
+        transform: rotate(10deg);
+        filter:drop-shadow(2px 2px  #82c3a6);
+    }
+}
+
+@keyframes translate{
+    to{
+        transform: translate(20px,-5px);
+        filter:drop-shadow(2px 2px #82c3a6);
+    }
+}
+
+@-webkit-keyframes translate{
+    to{
+        transform: translate(20px,-5px);
+        filter:drop-shadow(2px 2px #82c3a6);
+    }
+}
+
+@keyframes intro {
+    0%   { margin-top: 150px;}
+    60%  { margin-top: -5px;}
+    100% { margin-top: 0px;}
+  }
+
+@-webkit-keyframes intro {
+    0%   { margin-top: 150px;}
+    60%  { margin-top: -5px;}
+    100% { margin-top: 0px;}
+}
+
+@media all and (min-width:900px) {
+	.contenido {
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media all and (max-width:900px) {
+	.contenido {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+    }
+    
+    .menu_superior{
+        width: 100%;
+        text-align: center; 
+    }
+
+    .titulo{
+        width: 100%;
+        text-align: center; 
+    }
+
+    .secundarias div{
+        width: 100%;
+    }
+
+    .contacto, .terminos, .redes, .derechos{
+        width: 100%;
+    }
+
+    .galeria div{
+        width: 100%;
+    }
+}
